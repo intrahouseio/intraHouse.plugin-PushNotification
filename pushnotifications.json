@@ -1,0 +1,13 @@
+{
+  "id": "pushnotifications",
+  "description": "Push-notifications plugin",
+  "gendevices": 0,
+  "service": "info",
+  "single": 1,
+  "module": "index.js",
+  "params": [
+  ],
+  "genrules": {},
+  "commands": [
+  ]
+}
