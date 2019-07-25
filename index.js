@@ -5,15 +5,19 @@ const plugin = new Plugin();
 
 plugin.on('info', data => {
   data.sendTo.forEach(user => {
-
+    notification({
+      suuid: plugin.system.serverkey,
+      token: user.addr,
+      title: data.sign || '',
+      body: data.txt || '',
+    });
+    .then(res => {
+      plugin.debug(res);
+    })
+    .catch(e => plugin.debug(e.message));
   });
 });
 
 plugin.on('start', () => {
-  notification('test1234567890')
-  .then(res => {
-    const msg = JSON.parse(res);
-    console.log(msg);
-  })
-  .catch(e => console.log(e.message));
+
 });

@@ -1,6 +1,6 @@
 {
   "id": "pushnotifications",
-  "description": "Push-notifications plugin",
+  "description": "Push-notification plugin",
   "gendevices": 0,
   "service": "info",
   "single": 1,

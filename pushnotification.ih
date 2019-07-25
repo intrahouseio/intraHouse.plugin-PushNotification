@@ -1,6 +1,6 @@
 {
-    "id":"pushnotifications",
-    "description":"Push-notifications plugin",
+    "id":"pushnotification",
+    "description":"Push-notification plugin",
     "activation": false,
     "resources": false,
     "cross": true,
