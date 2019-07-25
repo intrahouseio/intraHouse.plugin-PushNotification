@@ -5,14 +5,14 @@ const plugin = new Plugin();
 
 plugin.on('info', data => {
   data.sendTo.forEach(user => {
-    const data = {
+    const msg = {
       suuid: plugin.system.serverkey,
       token: user.addr,
       title: data.sign || '',
       body: data.txt || '',
     };
-    plugin.debug(data);
-    notification(data)
+    plugin.debug(msg);
+    notification(msg)
     .then(res => {
       plugin.debug(res);
     })
