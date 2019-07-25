@@ -1,5 +1,5 @@
 {
-  "id": "pushnotifications",
+  "id": "pushnotification",
   "description": "Push-notification plugin",
   "gendevices": 0,
   "service": "info",
