@@ -10,7 +10,7 @@ plugin.on('info', data => {
       token: user.addr,
       title: data.sign || '',
       body: data.txt || '',
-    });
+    })
     .then(res => {
       plugin.debug(res);
     })
